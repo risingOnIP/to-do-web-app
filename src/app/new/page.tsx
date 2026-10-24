@@ -5,7 +5,7 @@ import React from "react";
 
 async function createToDo(data: FormData) {
   "use server";
-  const title = data.get("title") as string; //inside of get has to be same as name in input
+  const title = data.get("title") as string;
   if (typeof title !== "string") {
     throw new Error("title is not a string");
   } else if (title.length === 0) {
@@ -16,7 +16,7 @@ async function createToDo(data: FormData) {
   redirect("/");
 }
 
-const newPage = () => {
+const NewTodoPage = () => {
   return (
     <>
       <header className="flex justify-between items-center mb-4">
@@ -50,4 +50,4 @@ const newPage = () => {
   );
 };
 
-export default newPage;
+export default NewTodoPage;
