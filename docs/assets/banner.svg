@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320" role="img" aria-label="To-Do Web App">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111827"/>
+      <stop offset="1" stop-color="#1F2937"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#FFFFFF" stroke-opacity="0.04" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0.55" stop-color="#111827" stop-opacity="1"/>
+      <stop offset="0.75" stop-color="#111827" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="320" rx="18" fill="url(#bg)"/>
+  <rect width="1280" height="320" rx="18" fill="url(#grid)"/>
+  <g>
+    <line x1="1163" y1="248" x2="1180" y2="247" stroke="#2563EB" stroke-opacity="0.45" stroke-width="1.5"/>
+    <line x1="1163" y1="248" x2="1186" y2="233" stroke="#2563EB" stroke-opacity="0.45" stroke-width="1.5"/>
+    <line x1="1046" y1="193" x2="1081" y2="213" stroke="#2563EB" stroke-opacity="0.45" stroke-width="1.5"/>
+    <line x1="1046" y1="193" x2="1067" y2="155" stroke="#2563EB" stroke-opacity="0.45" stroke-width="1.5"/>
+    <line x1="1186" y1="233" x2="1180" y2="247" stroke="#2563EB" stroke-opacity="0.45" stroke-width="1.5"/>
+    <line x1="960" y1="238" x2="934" y2="227" stroke="#2563EB" stroke-opacity="0.45" stroke-width="1.5"/>
+    <line x1="960" y1="238" x2="1025" y2="277" stroke="#2563EB" stroke-opacity="0.45" stroke-width="1.5"/>
+    <line x1="1067" y1="155" x2="1084" y2="156" stroke="#2563EB" stroke-opacity="0.45" stroke-width="1.5"/>
+    <line x1="1067" y1="155" x2="1035" y2="146" stroke="#2563EB" stroke-opacity="0.45" stroke-width="1.5"/>
+    <line x1="1148" y1="63" x2="1207" y2="101" stroke="#2563EB" stroke-opacity="0.45" stroke-width="1.5"/>
+    <line x1="1148" y1="63" x2="1058" y2="34" stroke="#2563EB" stroke-opacity="0.45" stroke-width="1.5"/>
+    <line x1="1189" y1="158" x2="1207" y2="101" stroke="#2563EB" stroke-opacity="0.45" stroke-width="1.5"/>
+    <line x1="934" y1="227" x2="1025" y2="277" stroke="#2563EB" stroke-opacity="0.45" stroke-width="1.5"/>
+    <line x1="1025" y1="87" x2="1058" y2="34" stroke="#2563EB" stroke-opacity="0.45" stroke-width="1.5"/>
+    <circle cx="1163" cy="248" r="13" fill="#B45309" fill-opacity="0.12"/>
+    <circle cx="1163" cy="248" r="7" fill="#B45309"/>
+    <circle cx="1046" cy="193" r="11" fill="#2563EB" fill-opacity="0.12"/>
+    <circle cx="1046" cy="193" r="5" fill="#2563EB"/>
+    <circle cx="1186" cy="233" r="11" fill="#2563EB" fill-opacity="0.12"/>
+    <circle cx="1186" cy="233" r="5" fill="#2563EB"/>
+    <circle cx="960" cy="238" r="9" fill="#2563EB" fill-opacity="0.12"/>
+    <circle cx="960" cy="238" r="3" fill="#2563EB"/>
+    <circle cx="1180" cy="247" r="10" fill="#2563EB" fill-opacity="0.12"/>
+    <circle cx="1180" cy="247" r="4" fill="#2563EB"/>
+    <circle cx="1067" cy="155" r="11" fill="#2563EB" fill-opacity="0.12"/>
+    <circle cx="1067" cy="155" r="5" fill="#2563EB"/>
+    <circle cx="1148" cy="63" r="11" fill="#2563EB" fill-opacity="0.12"/>
+    <circle cx="1148" cy="63" r="5" fill="#2563EB"/>
+    <circle cx="1189" cy="158" r="11" fill="#2563EB" fill-opacity="0.12"/>
+    <circle cx="1189" cy="158" r="5" fill="#2563EB"/>
+    <circle cx="1035" cy="146" r="11" fill="#2563EB" fill-opacity="0.12"/>
+    <circle cx="1035" cy="146" r="5" fill="#2563EB"/>
+    <circle cx="934" cy="227" r="9" fill="#2563EB" fill-opacity="0.12"/>
+    <circle cx="934" cy="227" r="3" fill="#2563EB"/>
+    <circle cx="1025" cy="87" r="9" fill="#2563EB" fill-opacity="0.12"/>
+    <circle cx="1025" cy="87" r="3" fill="#2563EB"/>
+    <circle cx="1084" cy="156" r="11" fill="#2563EB" fill-opacity="0.12"/>
+    <circle cx="1084" cy="156" r="5" fill="#2563EB"/>
+    <circle cx="1081" cy="213" r="11" fill="#2563EB" fill-opacity="0.12"/>
+    <circle cx="1081" cy="213" r="5" fill="#2563EB"/>
+    <circle cx="1058" cy="34" r="10" fill="#2563EB" fill-opacity="0.12"/>
+    <circle cx="1058" cy="34" r="4" fill="#2563EB"/>
+    <circle cx="1025" cy="277" r="10" fill="#2563EB" fill-opacity="0.12"/>
+    <circle cx="1025" cy="277" r="4" fill="#2563EB"/>
+    <circle cx="1207" cy="101" r="10" fill="#2563EB" fill-opacity="0.12"/>
+    <circle cx="1207" cy="101" r="4" fill="#2563EB"/>
+  </g>
+  <rect width="1280" height="320" rx="18" fill="url(#fade)" fill-opacity="0.85"/>
+  <rect x="0" y="56" width="8" height="208" fill="#15803D"/>
+  <text x="72" y="128" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="58" font-weight="700" fill="#F9FAFB">To-Do Web App</text>
+  <text x="72" y="176" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="22" fill="#CBD5E1">A minimal full-stack task list built with Next.js Server</text>
+  <text x="72" y="208" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="22" fill="#CBD5E1">Components, Server Actions, and Prisma.</text>
+  <rect x="72" y="248" width="128" height="32" rx="16" fill="#15803D" fill-opacity="0.18" stroke="#15803D" stroke-width="1.5"/>
+  <text x="136.0" y="269" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1.2" fill="#F9FAFB">FULL STACK</text>
+  <rect x="212" y="248" width="99" height="32" rx="16" fill="#2563EB" fill-opacity="0.18" stroke="#2563EB" stroke-width="1.5"/>
+  <text x="261.5" y="269" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1.2" fill="#F9FAFB">NEXT.JS</text>
+  <rect x="323" y="248" width="90" height="32" rx="16" fill="#2563EB" fill-opacity="0.18" stroke="#2563EB" stroke-width="1.5"/>
+  <text x="368.0" y="269" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1.2" fill="#F9FAFB">PRISMA</text>
+</svg>
