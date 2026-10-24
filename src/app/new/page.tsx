@@ -1,11 +1,12 @@
 import { prisma } from "@/src/db";
+import { revalidatePath } from "next/cache";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import React from "react";
 
 async function createToDo(data: FormData) {
   "use server";
-  const title = data.get("title") as string; //inside of get has to be same as name in input
+  const title = data.get("title") as string;
   if (typeof title !== "string") {
     throw new Error("title is not a string");
   } else if (title.length === 0) {
@@ -13,10 +14,11 @@ async function createToDo(data: FormData) {
   }
 
   await prisma.todo.create({ data: { title, complete: false, updatedAt: new Date() } });
+  revalidatePath("/");
   redirect("/");
 }
 
-const newPage = () => {
+const NewTodoPage = () => {
   return (
     <>
       <header className="flex justify-between items-center mb-4">
@@ -50,4 +52,4 @@ const newPage = () => {
   );
 };
 
-export default newPage;
+export default NewTodoPage;

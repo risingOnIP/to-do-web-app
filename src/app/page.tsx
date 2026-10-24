@@ -1,29 +1,35 @@
 import Link from 'next/link'
+import { revalidatePath } from 'next/cache'
 import React from 'react'
-import { prisma } from '../db'
-import TodoItem from '../components/TodoItem';
+import { prisma } from '@/src/db'
+import TodoItem from '@/src/components/TodoItem'
 
 async function getTodos() {
-  return  await prisma.todo.findMany(); 
+  return await prisma.todo.findMany()
 }
 
+async function toggleTodo(id: string, complete: boolean) {
+  'use server'
+  await prisma.todo.update({ where: { id }, data: { complete } })
+  revalidatePath('/')
+}
 
-const ToDoMainPage =  async () => {
-  const todos = await getTodos(); 
+const TodoListPage = async () => {
+  const todos = await getTodos()
   return (
     <>
       <header className="flex justify-between items-center mb-4">
         <h1>To Do App</h1>
-        <Link href="/new" className="border border-slate-300 text-slate-300 px-2 py-1 rounded hover:bg-slate-700 active:bg-slate-700 active:scale-95 transition duration-200 ease-in-out outline-none">New Page Link</Link>
+        <Link href="/new" className="border border-slate-300 text-slate-300 px-2 py-1 rounded hover:bg-slate-700 active:bg-slate-700 active:scale-95 transition duration-200 ease-in-out outline-none">New Todo</Link>
       </header>
 
       <ul className="pl-4">
         {todos.map(todo => (
-          <TodoItem key={todo.id} {...todo}></TodoItem>
+          <TodoItem key={todo.id} {...todo} toggleTodo={toggleTodo} />
         ))}
       </ul>
     </>
   )
 }
 
-export default ToDoMainPage
+export default TodoListPage
