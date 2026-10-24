@@ -1,4 +1,5 @@
 import { prisma } from "@/src/db";
+import { revalidatePath } from "next/cache";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import React from "react";
@@ -13,6 +14,7 @@ async function createToDo(data: FormData) {
   }
 
   await prisma.todo.create({ data: { title, complete: false, updatedAt: new Date() } });
+  revalidatePath("/");
   redirect("/");
 }
 

@@ -1,10 +1,17 @@
 import Link from 'next/link'
+import { revalidatePath } from 'next/cache'
 import React from 'react'
 import { prisma } from '@/src/db'
 import TodoItem from '@/src/components/TodoItem'
 
 async function getTodos() {
   return await prisma.todo.findMany()
+}
+
+async function toggleTodo(id: string, complete: boolean) {
+  'use server'
+  await prisma.todo.update({ where: { id }, data: { complete } })
+  revalidatePath('/')
 }
 
 const TodoListPage = async () => {
@@ -18,7 +25,7 @@ const TodoListPage = async () => {
 
       <ul className="pl-4">
         {todos.map(todo => (
-          <TodoItem key={todo.id} {...todo}></TodoItem>
+          <TodoItem key={todo.id} {...todo} toggleTodo={toggleTodo} />
         ))}
       </ul>
     </>
