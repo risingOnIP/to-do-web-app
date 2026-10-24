@@ -4,13 +4,13 @@
 
 **A minimal full-stack task list built with Next.js Server Components, Server Actions, and Prisma.**
 
-![Status](https://img.shields.io/badge/Status-Complete-15803D?style=flat-square&labelColor=111827) ![Next.js](https://img.shields.io/badge/Next.js-15-2563EB?style=flat-square&labelColor=111827&logo=nextdotjs&logoColor=white) ![Prisma](https://img.shields.io/badge/Prisma-SQLite-2563EB?style=flat-square&labelColor=111827&logo=prisma&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3-2563EB?style=flat-square&labelColor=111827&logo=tailwindcss&logoColor=white) ![License](https://img.shields.io/badge/License-MIT-6B7280?style=flat-square&labelColor=111827)
+![Status](https://img.shields.io/badge/Status-Archived-15803D?style=flat-square&labelColor=111827) ![Next.js](https://img.shields.io/badge/Next.js-15-2563EB?style=flat-square&labelColor=111827&logo=nextdotjs&logoColor=white) ![Prisma](https://img.shields.io/badge/Prisma-SQLite-2563EB?style=flat-square&labelColor=111827&logo=prisma&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3-2563EB?style=flat-square&labelColor=111827&logo=tailwindcss&logoColor=white) ![License](https://img.shields.io/badge/License-MIT-6B7280?style=flat-square&labelColor=111827)
 
 To-Do Web App is a small learning project that implements a create, list, and complete task flow on the Next.js App Router. Pages read the database directly from Server Components, and every write goes through a Server Action, so the app has no REST endpoints and no client-side data fetching code.
 
 ## Overview
 
-The app stores tasks in a local SQLite database through Prisma. The home page lists every task with its saved completion state, and the New Todo page posts a title to a Server Action that validates it, inserts the row, and redirects back to the list.
+The project is complete and preserved as a reference implementation. The app stores tasks in a local SQLite database through Prisma. The home page lists every task with its saved completion state, and the New Todo page posts a title to a Server Action that validates it, inserts the row, and redirects back to the list.
 
 - **Server-rendered list:** `src/app/page.tsx` is an async Server Component that queries all tasks with Prisma.
 - **Server Action form:** `src/app/new/page.tsx` submits the form to an inline `createToDo` action with no API route.

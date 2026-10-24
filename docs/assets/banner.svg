@@ -67,10 +67,10 @@
   <text x="72" y="128" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="58" font-weight="700" fill="#F9FAFB">To-Do Web App</text>
   <text x="72" y="176" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="22" fill="#CBD5E1">A minimal full-stack task list built with Next.js Server</text>
   <text x="72" y="208" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="22" fill="#CBD5E1">Components, Server Actions, and Prisma.</text>
-  <rect x="72" y="248" width="128" height="32" rx="16" fill="#15803D" fill-opacity="0.18" stroke="#15803D" stroke-width="1.5"/>
-  <text x="136.0" y="269" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1.2" fill="#F9FAFB">FULL STACK</text>
-  <rect x="212" y="248" width="99" height="32" rx="16" fill="#2563EB" fill-opacity="0.18" stroke="#2563EB" stroke-width="1.5"/>
-  <text x="261.5" y="269" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1.2" fill="#F9FAFB">NEXT.JS</text>
-  <rect x="323" y="248" width="90" height="32" rx="16" fill="#2563EB" fill-opacity="0.18" stroke="#2563EB" stroke-width="1.5"/>
-  <text x="368.0" y="269" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1.2" fill="#F9FAFB">PRISMA</text>
+  <rect x="72" y="248" width="109" height="32" rx="16" fill="#15803D" fill-opacity="0.18" stroke="#15803D" stroke-width="1.5"/>
+  <text x="126.5" y="269" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1.2" fill="#F9FAFB">ARCHIVED</text>
+  <rect x="193" y="248" width="99" height="32" rx="16" fill="#2563EB" fill-opacity="0.18" stroke="#2563EB" stroke-width="1.5"/>
+  <text x="242.5" y="269" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1.2" fill="#F9FAFB">NEXT.JS</text>
+  <rect x="304" y="248" width="90" height="32" rx="16" fill="#2563EB" fill-opacity="0.18" stroke="#2563EB" stroke-width="1.5"/>
+  <text x="349.0" y="269" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1.2" fill="#F9FAFB">PRISMA</text>
 </svg>
