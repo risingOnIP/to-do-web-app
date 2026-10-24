@@ -91,8 +91,8 @@ flowchart LR
 
 ### Prerequisites
 
-- Node.js 18.18 or later
-- npm
+- Node.js 18.18 or later.
+- npm.
 
 ### Installation
 
