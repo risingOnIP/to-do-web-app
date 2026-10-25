@@ -159,13 +159,6 @@ to-do-web-app/
 └── README.md
 ```
 
-## Roadmap
-
-- [ ] Add delete support for individual tasks.
-- [ ] Add editing of task titles.
-- [ ] Add inline validation feedback for empty titles.
-- [ ] Order tasks by creation date.
-
 ## Acknowledgments
 
 - Project scaffolding from [create-next-app](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
